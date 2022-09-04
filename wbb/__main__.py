@@ -118,30 +118,30 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 text="Commands ❓", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
-                text="Repo 🛠",
+                text="👨‍💻 Devoloper 👨‍💻",
                 url="https://github.com/Rishbropromax",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="System Stats 🖥",
-                callback_data="stats_callback",
+                text="✨ CatXGirl News ✨",
+                url="t.me/CatXGirlNews",
             ),
             InlineKeyboardButton(
-                text="Support 👨", url="http://t.me/Emo_Bot_Support"
+                text="🌷 CatXGirl Support 🌷", url="http://t.me/CatXGirlSupport"
             ),
         ],
         [
             InlineKeyboardButton(
                 text="Add Me To Your Group 🎉",
-                url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
+                url=f"http://t.me/CatXGirl_Bot?startgroup=new",
             )
         ],
     ]
 )
 
 home_text_pm = (
-        f"Hey there! My name is {BOT_NAME}. I can manage your "
+        f"Hey there! My name is CatXGirl Bot. I can manage your "
         + "group with lots of useful features, feel free to "
         + "add me to your group."
 )
@@ -151,19 +151,20 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="Help ❓",
-                url=f"t.me/{BOT_USERNAME}?start=help",
+                url=f"t.me/CatXGirl_Bot?start=help",
             ),
             InlineKeyboardButton(
-                text="Repo 🛠",
+                text="👨‍💻 Devoloper 👨‍💻",
                 url="https://github.com/Rishbropromax",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="System Stats 💻",
-                callback_data="stats_callback",
+                text="✨ CatXGirl News ✨",
+                 url="t.me/CatXGirlNews",
             ),
-            InlineKeyboardButton(text="Support 👨", url="t.me/Emo_Bot_Support"),
+            InlineKeyboardButton(
+                text="🌷 CatXGirl Support 🌷", url="http://t.me/CatXGirlSupport",
         ],
     ]
 )
@@ -213,7 +214,7 @@ async def help_command(_, message):
                         [
                             InlineKeyboardButton(
                                 text="Click here",
-                                url=f"t.me/{BOT_USERNAME}?start=help_{name}",
+                                url=f"t.me/CatXGirl_Bot?start=help_{name}",
                             )
                         ],
                     ]
@@ -309,6 +310,7 @@ Also you can ask anything in Support Group.
 General command are:
  - /start: Start the bot
  - /help: Give this message
+ - /allstart : Mention Filter Start
  """
     if mod_match:
         module = (mod_match.group(1)).replace(" ", "_")
